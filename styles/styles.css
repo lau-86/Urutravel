@@ -22,6 +22,8 @@ video {
     object-fit: cover;
 }
 
+/*INDEX*/
+
 .htitulo {
     font-size: 36px;
 }
@@ -117,7 +119,7 @@ a:hover {
     margin: auto;
     margin-top: 5%;
     width: 200px;
-    height: 25px;
+    height: 35px;
     border-radius: 30px;
     
 }
