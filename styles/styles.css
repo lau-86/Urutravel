@@ -1,0 +1,462 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+html {
+    height: 100%;
+}
+
+#hero {
+    min-height: 100vh;
+    position: relative;
+}
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.htitulo {
+    font-size: 36px;
+}
+
+.ptitulo {
+    font-size: 24px;
+}
+
+
+.promo {
+    padding-top: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+    width: 60%;
+    margin: auto;
+    position: relative;
+    z-index: 2;
+}
+
+@media screen and (max-width: 768px) {
+    nav a {
+        display: block;
+        margin: 0.3em 0;
+        align-items: right;
+    }
+    .promo{
+        text-align: center;
+        padding-top: 200px;
+        
+    }
+    .ptitulo{
+        padding: 10px;
+    }
+}
+
+
+
+
+header {
+    display: flex;
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+
+
+}
+
+header .logo img {
+    width: 120px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+
+nav a {
+    display: inline;
+    margin: 0 1em;
+    text-decoration: none;
+    color: black;
+    padding-right: 20px;
+    font-size: 20px;
+    font-style: normal;
+}
+
+a:hover {
+    color: rgb(0, 56, 168);
+}
+
+@media screen and (max-width: 768px) {
+    nav a {
+        display: block;
+        margin: 0.3em 0;
+        align-items: right;
+        line-height: 20px;
+
+    }
+
+    header{
+        height: 150px;
+    }
+
+    header .logo img {
+        width: 200px;
+    }
+
+
+}
+
+.rboton {
+    margin: auto;
+    margin-top: 5%;
+    width: 200px;
+    height: 25px;
+    border-radius: 30px;
+    
+}
+
+.contact {
+    font-weight: 500px;
+    font-size: 20px;
+    font-style: normal;
+    text-align:center;
+    color: black;
+
+}
+
+.rboton :hover{
+    color: aqua;
+}
+
+/*DESTINOS1*/
+
+.bbackground {
+    background-image: url(../assets/imagenes/background1.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: none;
+    min-height: 100vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+
+.destinos1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+    margin-top: 10%;
+    padding-top: 50px;
+    padding-right: 10px;
+    
+}
+
+.idestinos1 {
+    max-width: 400px;
+    padding: 20px;
+    
+
+}
+
+.hdestinos1 {
+    padding-bottom: 20px;
+}
+
+.parrafodestinos1 {
+    font-style: normal;
+    font-size: 15px;
+    padding: 20px;
+    text-align: center;
+    color: black;
+    text-align: justify;
+
+}
+
+@media screen and (max-width:768px) {
+    .destinos1 {
+        flex-direction: column;
+        width: 100%;
+        margin: auto;
+    }
+}
+
+/*DESTINOS2*/
+
+
+.destinos2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+    padding-right: 10px;
+}
+
+.idestinos2 {
+    max-width: 400px;
+    padding: 20px;
+}
+
+.hdestinos2 {
+    padding-bottom: 20px;
+}
+
+.parrafodestinos2 {
+    font-style: normal;
+    font-size: 15px;
+    padding: 20px;
+    text-align: center;
+    color: black;
+    text-align: justify;
+}
+
+@media screen and (max-width:768px) {
+    .destinos2 {
+        flex-direction: column;
+        width: 100%;
+        margin: auto;
+    }
+}
+
+
+/*DESTINOS3*/
+
+.destinos3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+    padding-right: 10px;
+}
+
+.idestinos3 {
+    max-width: 400px;
+    padding: 20px;
+}
+
+.hdestinos3 {
+    padding-bottom: 20px;
+}
+
+.parrafodestinos3 {
+    font-style: normal;
+    font-size: 15px;
+    padding: 20px;
+    text-align: center;
+    color: black;
+    text-align: justify;
+}
+
+@media screen and (max-width:768px) {
+    .destinos3 {
+        flex-direction: column;
+        width: 100%;
+        margin: auto;
+    }
+}
+
+/*PAQUETE 1*/
+
+.paquete1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    margin-bottom: 30px;
+    width: 1200px;
+    padding-right: 10px;
+}
+
+.ipaquete1 {
+    max-width: 400px;
+    padding: 20px;
+}
+
+.hpaquete1 {
+    display: flex;
+    padding-bottom: 20px;
+}
+
+.parrafopaquete1 {
+    font-style: normal;
+    font-size: 15px;
+    padding: 20px;
+    color: black;
+    text-align: justify;
+    align-items: center;
+}
+
+@media screen and (max-width:768px) {
+    .paquete1 {
+        flex-direction: column;
+        width: 100%;
+        margin: auto;
+    }
+}
+
+/*PAQUETE 2*/
+
+.paquete2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+    padding-right: 10px;
+}
+
+.ipaquete2 {
+    max-width: 400px;
+    padding: 20px;
+}
+
+.hpaquete2 {
+    display: flex;
+    padding-bottom: 20px;
+}
+
+.parrafopaquete2 {
+    font-style: normal;
+    font-size: 15px;
+    padding: 20px;
+    align-items: center;
+    color: black;
+    text-align: justify;
+}
+
+@media screen and (max-width:768px) {
+    .paquete2 {
+        flex-direction: column;
+        width: 100%;
+        margin: auto;
+    }
+}
+
+/*HISTORIA*/
+
+.historia {
+    justify-content: center;
+    align-items: center;
+    width: 900px;
+    margin: auto;
+    margin-top: 10%;
+}
+
+.phistoria {
+    font-style: normal;
+    font-size: 20px;
+    color: black;
+    text-align: justify;
+    line-height: 40px;
+}
+
+.hhistoria {
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 40px;
+
+}
+
+.video {
+    display: flex;
+    margin: auto;
+    margin-top: 50px;
+    width: 1000px;
+    height: 700px;
+}
+
+  @media (max-width: 768px) {
+    .video {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+/*CONTACTO*/
+
+.form-imput,
+.form-textarea,
+.btn-submit {
+    width: 100%;
+}
+
+
+.form-title{
+    color: white;
+    text-align: center;
+    padding-bottom: 20px;
+
+}
+
+.form {
+    background: #1D6598;
+    opacity: 0.7;
+max-width: 650px;
+margin: auto;
+padding: 5px 40px;
+margin-top: 130px;
+margin-bottom: 130px;
+border-radius: 30px;
+}
+
+
+.form-label {
+    display: block;
+    color: white;
+    font-size: 16px;
+    font-weight: 100;
+    font-style: normal;
+    position: relative;
+    padding-top: 10px;
+}
+
+.form-textarea { 
+    background: white;       
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 2px;
+    font-size: 18px;
+
+}
+
+.btn-submit {
+    border-radius: 30px;
+    font-weight: 600;
+    font-style: normal;
+    text-decoration: none;
+    text-align: center;
+    color: black;   
+
+}
+
+/*FOOTER*/
+
+
+
+.direccion {
+    display: flex;
+    height: 40px;
+    margin-top: auto;
+    background-color: #1D6598;
+    opacity: 0.6;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 20px;
+    font-style: normal;
+    color: white;
+    
+}
+
+
