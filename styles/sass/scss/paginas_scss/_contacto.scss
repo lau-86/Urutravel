@@ -1,0 +1,50 @@
+/* CONTACTO */
+
+.form {
+    background: $backcolor;
+    opacity: $footeropacity;
+    max-width: $formmaxwidth;
+    margin: auto;
+    padding: $paddingform;
+    margin-top: $margintopbottom;
+    margin-bottom: $margintopbottom;
+    border-radius: $borderradius;
+
+    .form-title {
+        color: $textcolor;
+        @include center-text;
+        padding-bottom: $paddingcontent;
+    }
+
+    .form-label {
+        display: block;
+        color: $textcolor;
+        font-size: $labelfontsize;
+        font-weight: $labelfontweight;
+        font-style: normal;
+        position: relative;
+        padding-top: $paddingcontent;
+    }
+
+    .form-imput,
+    .form-textarea,
+    .btn-submit {
+        @include full-width;
+    }
+
+    .form-textarea {
+        background: white;
+        margin-bottom: $margintop;
+        border-radius: 2px;
+        font-size: $textareafontsize;
+    }
+
+    .btn-submit {
+        border-radius: $borderradius;
+        font-weight: $btnfontweight;
+        font-style: normal;
+        text-decoration: none;
+        @include center-text;
+        color: $btncolor;
+    }
+}

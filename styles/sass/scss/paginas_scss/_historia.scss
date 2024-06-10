@@ -1,0 +1,34 @@
+/* HISTORIA */
+
+.historia {
+    @include flex-center;
+    width: $maxwidth;
+    margin: auto;
+    margin-top: 10%;
+
+    .phistoria {
+        font-style: normal;
+        font-size: $basefontsize;
+        color: $maincolor;
+        text-align: justify;
+        line-height: 40px;
+    }
+
+    .hhistoria {
+        padding-bottom: $paddingcontent;
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .video {
+        @include flex-center;
+        margin-top: 50px;
+        width: $videowidth;
+        height: 700px;
+
+        @media (max-width: 768px) {
+            width: 100%;
+            height: auto;
+        }
+    }
+}

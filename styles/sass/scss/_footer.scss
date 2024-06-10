@@ -1,0 +1,15 @@
+/* FOOTER */
+
+.direccion {
+    @include flex-center;
+    justify-content: space-between;
+    height: $footerheight;
+    margin-top: auto;
+    background-color: $footerbgcolor;
+    opacity: $footeropacity;
+    padding-top: $footerpadding;
+    @include padding-x($footerpadding);
+    font-size: $footerfontsize;
+    font-style: normal;
+    color: $footerfontcolor;
+}

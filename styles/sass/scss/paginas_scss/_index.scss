@@ -1,0 +1,40 @@
+/* INDEX */
+
+.htitulo {
+    font-size: $fontsizehtitulo;
+}
+
+.ptitulo {
+    font-size: $fontsizeptitulo;
+}
+
+.promo {
+    @include promo-styles;
+}
+
+@media screen and (max-width: 768px) {
+    .promo {
+        @include promo-mobile-styles;
+    }
+
+    .ptitulo {
+        padding: $paddingcontent;
+    }
+}
+
+.rboton {
+    @include rboton-styles;
+
+    &:hover {
+        color: $hovercolor;
+    }
+}
+
+.contact {
+    font-weight: 500;
+    font-size: $fontsizecontact;
+    font-style: normal;
+    text-align: center;
+    color: $textcolor;
+    text-decoration: none;
+}

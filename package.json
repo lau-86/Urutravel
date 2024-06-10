@@ -1,0 +1,27 @@
+{
+  "name": "agencia-web",
+  "version": "1.0.0",
+  "description": "Proyecto de agencia web desarrollo web",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lau-86/PreEntrega2-LauraGonzalez.git"
+  },
+  "keywords": [
+    "viajes",
+    "agencia",
+    "paquetes",
+    "vuelos",
+    "hoteles",
+    "turismo"
+  ],
+  "author": "Laura Gonzalez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lau-86/PreEntrega2-LauraGonzalez/issues"
+  },
+  "homepage": "https://github.com/lau-86/PreEntrega2-LauraGonzalez#readme"
+}

@@ -1,0 +1,49 @@
+/*HEADER*/
+
+.navbar-brand img {
+    height: 100px;
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+.navbar-nav .nav-item {
+    margin-left: 15px;
+}
+
+.navbar-nav .nav-link {
+    color: black !important;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important;
+    padding-right: 20px !important;
+    font-size: 20px !important;
+    font-weight: 600 !important;
+    font-style: normal !important;
+}
+
+.navbar-nav .nav-link:hover {
+    color: rgb(0, 56, 168) !important;
+}
+
+.navbar-toggler {
+    margin-right: 10px;
+    padding: 0;
+}
+
+.navbar-toggler-icon {
+    background-color: white;
+}
+
+@media (max-width: 768px) {
+    .navbar-nav .nav-item {
+        margin-left: 20px;
+        padding-right: 10px;
+    }
+
+    .navbar-brand img {
+        padding-left: 20px;
+
+
+    }
+}
+  
