@@ -1,43 +1,46 @@
 /* PAQUETES */
 
 .paquete1 {
-    @include paquete-common-styles($margin-top: $margintopbottompaquete1, $margin-bottom: $marginbottompaquete1);
+  @include paquete-common-styles(
+    $margin-top: $margintopbottompaquete1,
+    $margin-bottom: $marginbottompaquete1
+  );
 
-    @media screen and (max-width: 768px) {
-        @include paquete-mobile-styles;
-    }
+  @media screen and (max-width: 768px) {
+    @include paquete-mobile-styles;
+  }
 
-    .ipaquete1 {
-        max-width: $maxwidthipaquete;
-        padding: $paddingipaquete;
-    }
+  .ipaquete1 {
+    max-width: $maxwidthipaquete;
+    padding: $paddingipaquete;
+  }
 
-    .hpaquete1 {
-        @include hpaquete-common-styles;
-    }
+  .hpaquete1 {
+    @include hpaquete-common-styles;
+  }
 
-    .parrafopaquete1 {
-        @include parrafo-common-styles;
-    }
+  .parrafopaquete1 {
+    @include parrafo-common-styles;
+  }
 }
 
 .paquete2 {
-    @include paquete-common-styles;
+  @include paquete-common-styles;
 
-    @media screen and (max-width: 768px) {
-        @include paquete-mobile-styles;
-    }
+  @media screen and (max-width: 768px) {
+    @include paquete-mobile-styles;
+  }
 
-    .ipaquete2 {
-        max-width: $maxwidthipaquete;
-        padding: $paddingipaquete;
-    }
+  .ipaquete2 {
+    max-width: $maxwidthipaquete;
+    padding: $paddingipaquete;
+  }
 
-    .hpaquete2 {
-        @include hpaquete-common-styles;
-    }
+  .hpaquete2 {
+    @include hpaquete-common-styles;
+  }
 
-    .parrafopaquete2 {
-        @include parrafo-common-styles;
-    }
+  .parrafopaquete2 {
+    @include parrafo-common-styles;
+  }
 }

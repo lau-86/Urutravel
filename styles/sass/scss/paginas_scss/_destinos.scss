@@ -1,34 +1,51 @@
 /* DESTINOS */
 
-.destinos1, .destinos2, .destinos3 {
+.destinos1,
+.destinos2,
+.destinos3 {
   @include flex-center(row);
   width: $widthpaquete;
   padding-top: $paddingtop;
   padding-right: $paddingright;
   margin-top: $margintop;
 
-  .idestinos1, .idestinos2, .idestinos3 {
-      max-width: $maxwidthipaquete;
-      padding: $paddingipaquete;
+  .idestinos1,
+  .idestinos2,
+  .idestinos3 {
+    max-width: $maxwidthipaquete;
+    padding: $paddingipaquete;
   }
 
-  .hdestinos1, .hdestinos2, .hdestinos3 {
-      padding-bottom: $paddingbottomhpaquete;
-      font-style: normal;
-      font-size: $fontsizehpaquete;
+  .hdestinos1,
+  .hdestinos2,
+  .hdestinos3 {
+    padding-bottom: $paddingbottomhpaquete;
+    font-style: normal;
+    font-size: $fontsizehpaquete;
   }
 
-  .parrafodestinos1, .parrafodestinos2, .parrafodestinos3 {
-      font-style: normal;
-      font-size: $fontsizeparrafo;
-      padding: $paddingparrafo;
-      text-align: justify;
-      color: $textcolor;
+  .parrafodestinos1,
+  .parrafodestinos2,
+  .parrafodestinos3 {
+    font-style: normal;
+    font-size: $fontsizeparrafo;
+    padding: $paddingparrafo;
+    text-align: justify;
+    color: $textcolor;
   }
 
   @media screen and (max-width: 768px) {
-      flex-direction: column;
-      width: 100%;
-      margin: auto;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
   }
+}
+
+.container1 {
+  display: flex;
+  margin-top: 10vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }

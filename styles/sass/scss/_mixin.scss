@@ -1,83 +1,83 @@
 @mixin flex-center($direction: row) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: $direction;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $direction;
 }
 
 @mixin flex-center-column {
-    @include flex-center(column);
+  @include flex-center(column);
 }
 
 @mixin responsive-font($size) {
-    font-size: $size;
+  font-size: $size;
 
-    @media screen and (max-width: 768px) {
-        font-size: $size * 0.8;
-    }
+  @media screen and (max-width: 768px) {
+    font-size: $size * 0.8;
+  }
 }
 
 @mixin promo-styles {
-    padding-top: $promopaddingtop;
-    @include flex-center-column;
-    width: $promowidth;
-    margin: auto;
-    position: relative;
-    z-index: 2;
+  padding-top: $promopaddingtop;
+  @include flex-center-column;
+  width: $promowidth;
+  margin: auto;
+  position: relative;
+  z-index: 2;
 }
 
 @mixin promo-mobile-styles {
-    text-align: center;
-    padding-top: $promopaddingtopmobile;
+  text-align: center;
+  padding-top: $promopaddingtopmobile;
 }
 
 @mixin rboton-styles {
-    margin: auto;
-    margin-top: $rbotonmargintop;
-    width: $rbotonwidth;
-    height: $rbotonheight;
-    border-radius: $borderradius;
+  margin: auto;
+  margin-top: $rbotonmargintop;
+  width: $rbotonwidth;
+  height: $rbotonheight;
+  border-radius: $borderradius;
 }
 
 @mixin paquete-common-styles($margin-top: 0, $margin-bottom: 0) {
-    @include flex-center;
-    width: $widthpaquete;
-    padding-right: $paddingpaquete;
-    margin-top: $margin-top;
-    margin-bottom: $margin-bottom;
+  @include flex-center;
+  width: $widthpaquete;
+  padding-right: $paddingpaquete;
+  margin-top: $margin-top;
+  margin-bottom: $margin-bottom;
 }
 
 @mixin hpaquete-common-styles {
-    display: flex;
-    padding-bottom: $paddingbottomhpaquete;
-    font-style: normal;
-    font-size: $fontsizehpaquete;
+  display: flex;
+  padding-bottom: $paddingbottomhpaquete;
+  font-style: normal;
+  font-size: $fontsizehpaquete;
 }
 
 @mixin parrafo-common-styles {
-    font-style: normal;
-    font-size: $fontsizeparrafo;
-    padding: $paddingparrafo;
-    color: $textcolor;
-    text-align: justify;
-    align-items: center;
+  font-style: normal;
+  font-size: $fontsizeparrafo;
+  padding: $paddingparrafo;
+  color: $textcolor;
+  text-align: justify;
+  align-items: center;
 }
 
 @mixin paquete-mobile-styles {
-    flex-direction: column;
-    width: 100%;
-    margin: auto;
+  flex-direction: column;
+  width: 100%;
+  margin: auto;
 }
 
 @mixin full-width {
-    width: 100%;
+  width: 100%;
 }
 
 @mixin center-text {
-    text-align: center;
+  text-align: center;
 }
 
 @mixin padding-x($padding) {
-    padding-left: $padding;
-    padding-right: $padding;
+  padding-left: $padding;
+  padding-right: $padding;
 }

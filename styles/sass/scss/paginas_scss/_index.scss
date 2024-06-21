@@ -1,40 +1,40 @@
 /* INDEX */
 
 .htitulo {
-    font-size: $fontsizehtitulo;
+  font-size: $fontsizehtitulo;
 }
 
 .ptitulo {
-    font-size: $fontsizeptitulo;
+  font-size: $fontsizeptitulo;
 }
 
 .promo {
-    @include promo-styles;
+  @include promo-styles;
 }
 
 @media screen and (max-width: 768px) {
-    .promo {
-        @include promo-mobile-styles;
-    }
+  .promo {
+    @include promo-mobile-styles;
+  }
 
-    .ptitulo {
-        padding: $paddingcontent;
-    }
+  .ptitulo {
+    padding: $paddingcontent;
+  }
 }
 
 .rboton {
-    @include rboton-styles;
+  @include rboton-styles;
 
-    &:hover {
-        color: $hovercolor;
-    }
+  &:hover {
+    color: $hovercolor;
+  }
 }
 
 .contact {
-    font-weight: 500;
-    font-size: $fontsizecontact;
-    font-style: normal;
-    text-align: center;
-    color: $textcolor;
-    text-decoration: none;
+  font-weight: 500;
+  font-size: $fontsizecontact;
+  font-style: normal;
+  text-align: center;
+  color: $textcolor;
+  text-decoration: none;
 }
