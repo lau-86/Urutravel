@@ -340,4 +340,307 @@ video {
   min-height: 100%;
 }
 
-/*# sourceMappingURL=styles.css.map */
+/*TIENDA*/
+
+.container {
+  display: flex;
+  margin: auto;
+  align-items: center;
+}
+
+.products {
+  width: 75%; 
+  margin: auto;
+}
+
+.product {  
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.carousel {
+  position: relative;
+  width: 50%;
+}
+
+.carouselimages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.carouselimages img {
+  max-width: 60%;
+  max-height: 70%;
+  padding-top: 30px;
+  object-fit: contain;
+  transition: opacity 0.5s ease-in-out;
+  display: none;
+  opacity: 0;
+}
+
+.carouselimages img.active {
+  display: block;
+  opacity: 1;
+}
+
+
+button.prev, button.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5); 
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button.prev {
+  left: 10px;
+}
+
+button.next {
+  right: 10px;
+}
+
+.productdetails {
+  width: 50%;
+  padding: 20px;
+  color: black;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+
+}
+
+.productdetails h2 {  
+  margin-bottom: 10px;
+}
+
+  .addtocart {
+    background: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  }
+
+  .addtocart:hover {
+    background: rgb(0, 56, 168);
+  }
+
+  .products .titleproduct {
+    color: black;
+    font-size: 20px;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  }
+
+  .products .productdetails p {
+    color: black;
+    font-style: normal;
+    font-size: 17px;
+    text-align: justify;
+    width: 100%;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  }
+
+  .cart {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 300px;
+    background: #222;
+    padding: 20px;
+    border-radius: 10px 0 0 10px;
+    transition: transform 0.3s ease;
+  }
+
+  .cart ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .cart li {
+    margin-bottom: 10px;
+  }
+
+  #emptycart, #checkout {
+    background: black;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+
+  #emptycart:hover, #checkout:hover {
+    background: rgb(0, 56, 168);
+  }
+
+  #cartcontainer {
+    display: none;
+  }
+
+  #togglecart {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  }
+
+  .cartcontent {
+    position: fixed;
+    bottom: 4rem;
+    right: 1rem;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    display: none;
+    z-index: 10;
+  }
+
+  .cartcontent ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .cartcontent li {
+    margin-bottom: 0.5rem;
+  }
+
+  .carttotal {
+    font-weight: bold;
+    margin-top: 1rem;
+  }
+
+  .cartactions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+  }
+
+  .cartactions button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+  }
+
+  .cartactions button:hover {
+    background-color: #555;
+  }
+
+  .collapsedcart {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    background-color: #333;
+    color: #fff;
+    padding: 0.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .collapsedcart i {
+    font-size: 1.5rem;
+  }
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.3);
+  font-family: "Archivo Black", sans-serif
+
+}
+
+.contentmodal {
+  background-color: #fff;
+  margin: 15% auto;
+  padding: 16px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e0e0e0;
+}
+
+.closemodal {
+  color: #888;
+  float: right;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.closemodal:hover,
+.closemodal:focus {
+  color: rgb(0, 56, 168);
+  text-decoration: none;
+}
+
+.contentmodal form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contentmodal .formlabel {
+  font-weight: 600;
+  color: #333;
+  font-size: 14px;
+}
+
+.contentmodal .formcontrol {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #333;
+}
+
+.btnsubmitpayment,
+.btncancel {
+  background-color: #000;
+  width: 100%;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  font-family: "Archivo Black", sans-serif
+}
+
+.btnsubmitpayment:hover,
+.btncancel:hover {
+  background-color: rgb(0, 56, 168);
+}
+
+.modal .cartactions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+
+
+
+

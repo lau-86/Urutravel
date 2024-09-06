@@ -1,0 +1,36 @@
+[
+  {
+    "id": "disney",
+    "title": "Aventura en Disney y Universal - 7 Noches",
+    "description": "Disfruta de unas vacaciones inolvidables con nuestro paquete exclusivo que incluye vuelos de ida y vuelta, estadía en hotel por 7 noches y traslados cómodos. Vive la magia de Disney World y la emoción de Universal Studios con toda la comodidad que mereces.",
+    "price": 1800.00,
+    "images": [
+      "../assets/imagenes/disney1.png",
+      "../assets/imagenes/disney2.png",
+      "../assets/imagenes/universal.png"
+    ]
+  },
+  {
+    "id": "europa",
+    "title": "Escapada Europea - París, Roma y Madrid - 10 Días",
+    "description": "Embárcate en un viaje de ensueño por Europa con nuestro paquete de 10 días que incluye vuelos de ida y vuelta, alojamiento en hotel en cada ciudad, y traslados entre aeropuertos y hoteles. Descubre la elegancia de París, la historia de Roma, y la vibrante cultura de Madrid, todo con la comodidad y seguridad que necesitas.",
+    "price": 2700.00,
+    "images": [
+      "../assets/imagenes/francia.png",
+      "../assets/imagenes/roma.png",
+      "../assets/imagenes/madrid.png"
+    ]
+  },
+  {
+    "id": "puntacana",
+    "title": "Escapada Romántica en Punta Cana - 7 Noches",
+    "description": "Disfruta de una escapada romántica con nuestro paquete exclusivo para parejas que incluye vuelos de ida y vuelta, estadía en un resort de lujo por 7 noches, y traslados privados. Relájate en las hermosas playas de Punta Cana, disfruta de la gastronomía gourmet, y vive una experiencia inolvidable junto a tu ser querido.",
+    "price": 2999.00,
+    "images": [
+      "../assets/imagenes/cana1.png",
+      "../assets/imagenes/cana2.png",
+      "../assets/imagenes/cana3.png"
+    ]
+  }
+]
+  
